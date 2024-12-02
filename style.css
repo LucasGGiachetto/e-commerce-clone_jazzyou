@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 14vw;
+    background: #7f76b5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    padding: 1vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo .logo-img {
+    width: 100%;
+    max-width: 20vw;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 12px;
+    width: 40vw;
+    margin-right: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 1vw;
+}
+
+.search-button {
+    padding: 5px 10px;
+    
+    background-color: #ffffff;
+    color: #7f76b5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e0e0e0;
+}
+
+hr{
+    border-color: #e0e0e0;
+}
+
+.slider {
+    position: relative;
+    max-width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra ao redor do slider */
+}
+
+.slider .radio-buttons {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    position: absolute; /* Permite posicionamento absoluto */
+    bottom: 10px; /* Distância do fundo do slider */
+    left: 0;
+    right: 0; /* Garante que a div ocupe toda a largura */
+    z-index: 10; /* Coloca as bolinhas acima dos slides */
+}
+
+.slides {
+    display: flex;
+    transition: transform 1.5s ease;
+    width: 100%; /* Garante que as slides ocupem toda a largura */
+}
+
+.slide {
+    min-width: 100%;
+    position: relative; /* Para permitir posicionamento absoluto de elementos internos */
+}
+
+.slide img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.radio-btn {
+    display: none; /* Esconde os botões de rádio */
+}
+
+
+/* Estilo para os botões de navegação */
+.slider .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider .nav-btn.prev {
+    left: 10px; /* Botão da esquerda */
+}
+
+.slider .nav-btn.next {
+    right: 10px; /* Botão da direita */
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens ao longo da linha */
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #e1e1e1; /* Cor de fundo suave */
+    padding: 2em; /* Espaçamento interno */
+    margin-top: 2em;
+    border-radius: 0px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 100%; /* Garante que ocupe 100% da largura da página */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.highlight {
+    text-align: center; /* Centraliza o conteúdo de cada item */
+    flex: 1; /* Cada item ocupa a mesma largura disponível */
+    padding: 0 1em; /* Espaçamento horizontal entre os itens */
+}
+
+.highlight .icon {
+    font-size: 3em; /* Aumenta o tamanho do ícone */
+    color: #7f76b5; /* Cor do ícone */
+    margin-bottom: 0.5em; /* Espaçamento entre o ícone e o texto */
+}
+
+.highlight p {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do texto */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.card-container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.card {
+    width: 350px; /* Adjust card width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0.0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0.5vw;
+    margin: 1.5vw;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.roupas{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    background-color: #7f76b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #5d5988;
+}
+.destaques{
+    color: rgb(9, 20, 102);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card2{
+    color: rgb(9, 20, 102);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+}
+
+.card-container2 {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 70px;
+    
+}
+
+.subfooter {
+    width: 99vw;
+    height: auto;
+    background-color: #7f76b5;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subfooter h5 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    opacity: 0.9;
+  }
+  
+  .subfooter-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .subfooter-description {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+  }
+  
+  .subfooter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subfooter-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    flex: 1;
+  }
+  
+  .subfooter-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    color: #7f76b5;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subfooter-button:hover {
+    background-color: #f5f5f5;
+  }

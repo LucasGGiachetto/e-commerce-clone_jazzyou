@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JazzYou Store</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca de ícones -->
+    <link rel="shortcut icon" type="image/png" href="./img/logo2.png">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="JazzYou" class="logo-img">
+            </div>
+            
+            <div class="search-bar">
+                <form action="/search" method="get">
+                    <input type="text" name="query" class="search-input" placeholder="O que você esta buscando?">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="links">
+                <nav>
+                    <a href="#" class="nav-link"><i class="fas fa-comments"></i> Atendimento</a>
+                    <a href="#" class="nav-link"><i class="fas fa-user"></i> Minha conta</a>
+                    <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i> Meu carrinho</a> 
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <center>
+            <a href="#" class="nav-link">Início</a>
+            <a href="#" class="nav-link">Produtos</a>
+            <a href="#" class="nav-link">Sobre</a> 
+            <a href="#" class="nav-link">Contato</a>
+            <a href="#" class="nav-link">Política de Troca e Devolução</a>
+        </center>
+    </header>
+    <div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide first">
+                    <img src="./img/image1.jpg" alt="img1">
+                </div>
+                <div class="slide">
+                    <img src="./img/imagem2.jpg" alt="img2">
+                </div>
+                <div class="slide">
+                    <a href="#"><img src="./img/imagem3.jpg" alt="img3">
+                </div>
+            </div>
+
+            <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
+            <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
+
+            <script src="script.js"></script>
+        </div>
+    </div>
+    <section class="highlights">
+        <div class="highlight">
+          <div class="icon">🛡️</div>
+          <p>Compra 100% segura</p>
+        </div>
+        <div class="highlight">
+          <div class="icon">💳</div>
+          <p>Parcele em até 5x</p>
+        </div>
+        <div class="highlight">
+          <div class="icon">🚚</div>
+          <p>Frete para todo o Brasil</p>
+        </div>
+        <div class="highlight">
+          <div class="icon">✨</div>
+          <p>Expresse sua totalidade</p>
+        </div>
+    </section> 
+    <div>
+        <br>
+        <br>
+        <center>
+            <div class="destaques">
+                <h1>Destaques</h1>
+            </div>
+        </center>
+        <div>
+        <section id="roupas">  
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="./img/roupa1.jpg" alt="roupa1">
+                    <div class="descricao">
+                        <center>
+                        <br>
+                            <h4>Cropped Brittany</h4>
+                        <h3>R$350,00</h3>
+                        <p>6 x de R$58,33 sem juros</p>
+                        </center>
+                        <br>
+                        <center>
+                        <button>Comprar</button>
+                        <button>Espiar</button>
+                    </center>
+                    </div>
+                    </div>
+                <div class="card">
+                    <img src="./img/roupa2.jpg" alt="roupa2">
+                    <div class="descricao">
+                        <center>
+                        <br>
+                            <h4>Calça "V" de Vera</h4>
+                        <h3>R$328,00</h3>
+                        <p>6 x R$54,67 sem juros</p>
+                    </center>
+                    <br>
+                    <center>
+                        <button>Comprar</button>
+                        <button>Espiar</button>
+                    </center>
+                </div>
+                </div>
+                <div class="card">
+                    <img src="./img/roupa3.jpg" alt="roupa3">
+                    <div class="descricao">
+                    <center>
+                        <br>
+                        <h4>Shorts "V" de Vera</h4>
+                        <h3>R$258,00</h3>
+                        <p>6 x de R$43,00</p>
+                    </center>
+                    <br>
+                        <center>
+                            <button>Comprar</button>
+                            <button>Espiar</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <section id="">
+        <br>
+        <br>
+        <br>
+        <div class="card-container">
+            <div class="card2">
+                <img src="./img/img1.jpg" alt="imagem" width="410px">
+                <br>
+                <center>
+                    <h3>Shorts</h3>
+                </center>
+            </div>
+            <div class="card2">
+                <img src="./img/img2.jpg" alt="imagem" width="410px">
+                <br>
+                <center>
+                    <h3>Calças</h3>
+                </center>
+            </div>
+            <div class="card2">
+                <img src="./img/img3.jpg" alt="imagem" width="410px">
+                <br>
+                <center>
+                    <h3>Cropped</h3> 
+                </center>
+            </div>
+            
+            <div class="card-container2">
+                <div class="card2">
+                    <img src="./img/img-message.jpg" alt="imagem" width="410px">
+                </div>
+                <div class="card2">
+                    <img src="./img/img-message2.jpg" alt="imagem" width="410px">
+                </div>
+                <div class="card2">
+                    <img src="./img/img-message3.jpg" alt="imagem" width="410px">
+
+                </div>
+                <div class="subfooter">
+                    <h5>NEWSLETTER</h5>
+                    <h1 class="subfooter-title">Acompanhe a JY de perto</h1>
+                    <p class="subfooter-description">Cadastre-se abaixo e esteja por dentro das novidades e promoções</p>
+                    <form class="subfooter-form">
+                        <input type="email" class="subfooter-input" placeholder="E-mail" required>
+                        <button type="submit" class="subfooter-button">→</button>
+                    </form>
+                </div>
+</body>
+</html>
